@@ -237,3 +237,271 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/* 
+ * If the screen is at most 640px
+ * Adjust our style for small, mobile screens
+ */
+@media screen and (max-width: 640px) {
+
+/* header */
+
+  #masthead {
+    position: static;
+    z-index: 99;
+    width: 100%;
+    overflow: hidden;
+    /*
+    margin: 0 0 30px;
+    overflow: auto;
+    border: 5px solid purple;
+    */
+    margin: 0;
+    color: #fff;
+    background: #fff;
+    border-bottom: 2px solid #ccc;
+  }
+
+  #logo {
+    float: left;
+    /*
+    float: left;
+    width: 250px;
+    height: 90px;
+    border: 5px solid red;
+    */
+    width: 100%; 
+    max-width: 640px;
+    height: auto;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: #4aaaa5;
+  }
+
+  nav {
+    float: none;
+    width: 100%; 
+    height: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    /*
+    border: 5px solid orange;
+    clear: both;
+    margin: auto;
+    clear: both;
+    margin-top: 25px;
+    float: left;
+    border: 5px solid blue;
+    */
+  }
+
+/*
+nav:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+} 
+*/
+
+  nav a {
+    float: none;
+    width: 32%; 
+    max-width: 640px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    color: #999;
+    text-decoration: none;
+    border-left: 1px solid #efefef;
+    /*
+    text-align: center;
+    display: inline-block;
+    margin: 20px 40px 20px 10px;
+    float: left;
+    width: 100px;
+    border: 5px solid blue;
+    padding-left: 60px;
+    border: 5px solid blue;
+    */
+  }
+
+  nav a:first-child {
+    border-left: 0 none;
+  }
+
+  /* footer */
+
+  footer {
+    /*
+    padding: 30px 0;
+    clear: both;
+    height: 100px;
+    clear: both;
+    border: 5px solid blue;
+    padding: 0;
+    padding: 30px 0;
+    border: 5px solid blue;
+    margin: 15px 0;
+    */
+    height: auto;
+    padding: 30px 0;
+    margin-bottom: 15px;
+    font-size: 12px;
+    color: #fff;
+    color: #ccc;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #4aaaa5;
+  }
+
+body {
+    /*
+    overflow: auto;
+    height: auto;
+    width: auto;
+    height: 100%;
+    margin-top: 104px;
+    margin-left: 200px;
+    margin-right: 90px;
+    background: #f2f4f5;
+    bottom: 0;
+    top:0;
+    left:0;
+    right:0;
+    border: 5px solid purple;
+    */
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+}
+
+  /* main */
+
+  #main-container {
+    /*
+    padding-top: 130px;
+    overflow: auto;
+    clear: both;
+    display: none;
+    border: 1px solid orange;
+    */
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #main-container:after { 
+     content: "."; 
+     visibility: hidden; 
+     display: block; 
+     height: 0; 
+     clear: both;
+  }
+
+  .main-section {
+    float: none;
+    width: 93%;
+    max-width: 640px;
+    height: auto;
+    padding: 30px;
+    margin: 20px;
+    /*
+    max-width: 580px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    padding: 30px;
+    margin: 0 0 40px;
+    display: none;
+    background: pink;
+    border: 10px solid red;
+    */
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+
+  .auth-image {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  /* sidebar */
+  .sidebar {
+    /*
+    float: right;
+    float: none;
+    margin-bottom: 20px;
+    display:none;
+    max-width: 580px;
+    max-width: 580px;
+    width: 100%;
+    width: 100%;
+    height: auto;
+    width: 700px
+    border: 10px solid red;
+    */
+    float: none;
+    width: 93%;
+    max-width: 640px;
+    height: auto;
+    padding: 30px;
+    margin: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border: 10px solid red;
+  }
+
+  /* portfolio page */
+
+  .work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+    display: none;
+  }
+
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+}
